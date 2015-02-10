@@ -6,6 +6,10 @@ class Missile
 
   def initialize(options={})
     @cell = options.fetch(:cell, DEFAULT_CELL)
-  end  
+  end
+
+  def cell_count(board)
+  	@cell = board
+  end
 
 end  
