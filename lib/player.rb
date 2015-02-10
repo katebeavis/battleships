@@ -1,6 +1,8 @@
+require_relative 'game'
+
 class Player
 	
-  include Enumerable
+  include Game
 
   def name(name)
     @name=name
