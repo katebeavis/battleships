@@ -1,5 +1,9 @@
+require_relative 'game'
+
 class Missile
 	
+  include Game
+
   attr_reader :cell, :position
 
   DEFAULT_CELL = 1

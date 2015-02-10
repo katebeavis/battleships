@@ -9,4 +9,8 @@ describe Board do
 		expect{board.store_ships(ship)}.to change{board.ship_count}.from(0).to(1)
 	end
 
+  it 'will be able to retrieve the position of a ship' do
+    expect(board.position_of_ship(ship)).to eq('A1')
+  end  
+
 end

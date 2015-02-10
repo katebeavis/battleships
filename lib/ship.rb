@@ -1,5 +1,9 @@
+require_relative 'game'
+
 class Ship
 	
+  include Game
+
   attr_accessor :cells, :position
 
   DEFAULT_CELLS = 2
