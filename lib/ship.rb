@@ -1,7 +1,13 @@
 class Ship
 	
-  def missile_count
+  attr_accessor :cells, :position
 
-	end
+  def position
+    @position = position
+  end  
+
+  def hit?(coordinates)
+    coordinates == position 
+  end  
   
 end  
