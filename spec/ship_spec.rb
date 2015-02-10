@@ -13,6 +13,10 @@ describe 'Ship' do
 
   it 'can be hit' do
     expect(ship).to be_hit
-  end  
+  end
+
+  it 'loses a cell upon being hit' do
+  	expect{ship.hit?}.to change{ship.cell_count}.from(2).to(1)
+  end
 
 end  

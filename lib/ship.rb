@@ -10,8 +10,12 @@ class Ship
     @position = options.fetch(:position, DEFAULT_POSITION)
   end
 
+  def cell_count
+  	@cells
+  end
+
   def hit?
-    true
-  end  
+  	@cells -= 1
+  end
 
 end  
