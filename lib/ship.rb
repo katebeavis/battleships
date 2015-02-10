@@ -10,4 +10,8 @@ class Ship
     @position = options.fetch(:position, DEFAULT_POSITION)
   end
 
+  def hit?
+    true
+  end  
+
 end  

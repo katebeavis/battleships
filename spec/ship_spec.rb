@@ -11,4 +11,8 @@ describe 'Ship' do
   	expect(ship.position).to eq('A1')
   end
 
+  it 'can be hit' do
+    expect(ship).to be_hit
+  end  
+
 end  
