@@ -1,11 +1,11 @@
 class Missile
 	
-  def missile_count
-     cell_count 
-	end
+  attr_reader :cell
 
-  def shot_position(coordinates)
-    hit?(coordinates)
+  DEFAULT_CELL = 1
+
+  def initialize(options={})
+    @cell = options.fetch(:cell, DEFAULT_CELL)
   end  
 
 end  
