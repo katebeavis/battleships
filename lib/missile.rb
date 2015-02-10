@@ -1,13 +1,11 @@
 class Missile
 	
   def missile_count
-     board.cell_count 
+     cell_count 
 	end
 
   def shot_position(coordinates)
-
-    ship.hit?(coordinates)
-
+    hit?(coordinates)
   end  
-  
+
 end  

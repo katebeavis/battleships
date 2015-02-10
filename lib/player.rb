@@ -1,5 +1,7 @@
 class Player
 	
+  include Enumerable
+
   def name(name)
     @name=name
   end  

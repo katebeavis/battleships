@@ -2,18 +2,10 @@ class Ship
 	
   attr_accessor :cells, :position
 
-  def number_of_cells
-  	@cells
+  DEFAULT_CELLS = 2
+
+  def initialize(options={})
+    @cells = options.fetch(:cells, DEFAULT_CELLS)
   end
 
-  def position
-    @position = position
-  end  
-
-  def hit?(coordinates)
-    coordinates == position 
-  end
-
-
-  
 end  

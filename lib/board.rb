@@ -1,5 +1,9 @@
+require "missile"
+
 class Board
 	
+  include Missile
+
   DEFAULT_NUMBER_OF_CELLS = 4
 
   def number_of_cells
@@ -7,7 +11,7 @@ class Board
 	end
 
   def relay_move(coordindates)
-    missile.shot_position(coordinates)
+    ship.hit?(coordinates)
   end 
 
   def set_ship_position(coordinates) 
