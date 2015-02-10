@@ -17,4 +17,4 @@ class Missile
     @position
   end  
 
-end  
+end
