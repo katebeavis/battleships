@@ -8,6 +8,10 @@ class Board
 
   def relay_move(coordindates)
     missile.shot_position(coordinates)
-  end     
+  end 
+
+  def set_ship_position(coordinates) 
+  	ship.position(coordinates)
+  end   
   
 end  
