@@ -15,6 +15,6 @@ describe 'Missile' do
 
   it 'needs to have a position' do
     expect(missile.position).to eq('A1')
-  end  
+  end 
   
-end  
+end

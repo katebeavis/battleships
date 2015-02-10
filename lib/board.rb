@@ -1,21 +1,17 @@
-require "missile"
-
 class Board
+
+  attr_reader :ships
+
+  def initialize
+    @ships ||= []
+  end
 	
-  include Missile
+  def store_ships(ship)
+    @ships << ship
+  end
 
-  DEFAULT_NUMBER_OF_CELLS = 4
-
-  def number_of_cells
-    @number_of_cells
-	end
-
-  def relay_move(coordindates)
-    ship.hit?(coordinates)
-  end 
-
-  def set_ship_position(coordinates) 
-  	ship.position(coordinates)
-  end   
+  def ship_count
+    @ships.count
+  end
   
-end  
+end
