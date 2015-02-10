@@ -1,69 +1,71 @@
 # battle_ships
 
-Initial crc diagram
+Initial CRC diagram
 
 Classes
+-------
 
+class Player
+
+Responsibilities:
+Player tells Game each Ship position
+Player tells Game each Marker position
+
+Collaborators:
+Game
+
+--------------------------------------------------
+
+class Game
+
+Responsibilities:
+Game tells Board Ships position, told by Player 
+Game tells Board Marker position, told by Player 
+Game tells Player if Marker has hit Ship
+
+Collaborators:
+Board
 Player
 
- Responsibilities | Collaborators
-------------------|-----------------
- Player tells     | Game
- Game each Ship   |
- position         |
-                  |
- Player tells     |
- Game each        |
- Marker position  |
- 
- Game
- 
- Responsibilities | Collaborators
- -----------------|---------------
- Game tells       | Board 
- Board Ships      | Player
- position         |
-                  |
- Game tells Board |
- Marker position  |
- 
- Ship
- 
- Responsibilities | Collaborators
- ----------------------------------
- Ship knows its   | Board
- been hit by      | Marker
- Marker           |
-                  |
- Ship knows how   |
- many cells it    |
- has left         |
- 
-Board
+-------------------------------------------------
 
-Responsibilities | Collaborator
----------------------------------
-Board tells      | Ship
-Ship its         | Marker
-position         | Game
-                 |
-Board tells Ship |
-if its been      |
-hit by Marker    |
-                 |
-Board tells      |
-Marker its       |
-position         |
-                 |
-Board tells Game |
-if Marker has hit|
+class Ship
+
+Responsibilities:
+Ship knows its been hit by Marker
+Ship knows how many cells it has left
+
+Collaborators:
+Board
+Marker
+
+----------------------------------------------------
+
+class Board
+
+Responsibilities:
+Board tells Ship its position
+Board tells Ship if its been hit by Marker
+Board tells Marker its position
+Board tell Game if Marker has hit Ship
+
+Collaborators:
+Ship
+Marker
+Game
+
+------------------------------------------------------
+
+class Marker
+
+Responsibilities:
+Marker hits Ship
+(or misses)
+
+Collaborators
+Board
 Ship
 
-Markers
 
-Resposibilities | Collaborators
----------------------------------
-Marker hits     | Board 
-Ship (or misses)| Ship
 
 
