@@ -1,5 +1,9 @@
 module Game
 	
+  def ships
+    @ships ||=[]
+  end  
+
   def store_ships(ship)
     @ships << ship
   end
@@ -13,6 +17,7 @@ module Game
       if s == ship 
         ship_pos = s.position
       end
+    end  
   end  
   
 end  
