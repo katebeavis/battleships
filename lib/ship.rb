@@ -22,4 +22,8 @@ class Ship
   	@cells -= 1
   end
 
+  def position
+    @position
+  end  
+
 end  
