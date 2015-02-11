@@ -3,6 +3,7 @@ require 'ship'
 describe 'Ship' do
   let(:ship){Ship.new}
 
+
   it 'should have default number of cells' do
     expect(ship.cells).to eq(1)
   end
@@ -27,5 +28,3 @@ describe 'Ship' do
   it 'should know when it\'s not sunk' do
     expect(ship).not_to be_sunk
   end
-
-end  

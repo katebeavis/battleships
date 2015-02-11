@@ -1,4 +1,5 @@
 class Missile
+
 	
   attr_reader :cell, :position
 
@@ -10,12 +11,7 @@ class Missile
     @position = options.fetch(:position, DEFAULT_POSITION)
   end
 
-  def cell_count(board)
-  	@cell = board
-  end
 
-  def position
-    @position
-  end  
+
 
 end
