@@ -1,22 +1,5 @@
 class Ship
 
-
-  attr_accessor :cells
-
-  DEFAULT_CELLS = 1
-
-  def initialize(options={})
-    @cells = options.fetch(:cells, DEFAULT_CELLS)
-    @hits = 0
-  end
-
-
-
-  def cell_count
-  	@cells
-  end
-
-
   attr_accessor :length, :hits
 
   def initialize(options={})
