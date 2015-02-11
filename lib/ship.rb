@@ -1,18 +1,15 @@
-require_relative 'game'
-
 class Ship
-	
-  include Game
 
-  attr_accessor :cells, :position
+  attr_accessor :cells
 
-  DEFAULT_CELLS = 2
-  DEFAULT_POSITION = 'A1'
+  DEFAULT_CELLS = 1
 
   def initialize(options={})
     @cells = options.fetch(:cells, DEFAULT_CELLS)
-    @position = options.fetch(:position, DEFAULT_POSITION)
+    @hits = 0
   end
+
+
 
   def cell_count
   	@cells
@@ -22,8 +19,12 @@ class Ship
   	@cells -= 1
   end
 
-  def position
-    @position
-  end  
+  def sunk?
+    @hits >= @cells
+  end
+
+  # def position
+  #   @position
+  # end  
 
 end  

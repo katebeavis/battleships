@@ -1,16 +1,10 @@
-module Game
-	
-  def initialize
-    @ships ||=[]
-  end  
+class Game
 
-  def store_ships(ship)
-    @ships << ship
+  
+
+  def launch_missile(coordinates)
+    
   end
-
-  def ship_count
-    @ships.count
-  end  
 
   
 end  
