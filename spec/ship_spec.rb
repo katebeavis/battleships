@@ -7,7 +7,12 @@ describe 'Ship' do
     expect{ship.hit}.to change{
       ship.hits
     }.from(0).to(1)
-  end  
+  end 
+
+  it 'can be sunk' do
+    ship.hit
+    expect(ship).to be_sunk
+  end 
   
 
 end  
