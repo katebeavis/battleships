@@ -1,7 +1,5 @@
 require 'board'
 
-class Game_holder; include Game; end
-
 describe Board do
 
 	let(:board){ Board.new }
