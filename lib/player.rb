@@ -1,19 +1,9 @@
-require_relative 'game'
-
 class Player
 	
-  include Game
+  attr_accessor :name, :current_move
 
-  def name(name)
+  def initialize(name)
     @name=name
   end  
-  
-  def take_turn(coordinates)
-    game.relay_move(coordinates)
-  end
-
-  def set_ship_position(coordinates)
-  	game.relay_ship_postiion(coordinates)
-  end
 
 end  
