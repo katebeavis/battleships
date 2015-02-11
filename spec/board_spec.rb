@@ -1,5 +1,6 @@
 require 'board'
 
+
 describe Board do
 
 	let(:board){ Board.new }
@@ -14,5 +15,6 @@ describe Board do
  #    board.place(small_ship, :A1)
  #    expect(board.cells).to eq({:A1 => small_ship, :A2 => "", :B1 => "", :B2 => ""})
  #  end
+
 
 end
