@@ -10,9 +10,9 @@ class Board
     cells[position] = ship
   end
 
-  def register_shot(pos)
-    cells[pos].content.hit!
-    cells[pos].is_a? Ship ? "Hit" : "Miss"
-  end
+  # def register_shot(pos)
+  #   cells[pos].content.hit!
+  #   cells[pos].is_a? Ship ? "Hit" : "Miss"
+  # end
       
 end
