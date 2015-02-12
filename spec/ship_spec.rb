@@ -2,6 +2,7 @@ require 'ship'
 
 describe 'Ship' do
   let(:ship){Ship.new('battleship',1)}
+  let(:game){double :game}
 
   it 'can be hit' do 
     expect{ship.hit}.to change{
@@ -12,9 +13,7 @@ describe 'Ship' do
   it 'can be sunk' do
     ship.hit
     expect(ship).to be_sunk
-  end 
-  
-  
+  end   
 
 end  
 
