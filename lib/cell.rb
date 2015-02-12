@@ -1,3 +1,5 @@
-class Cell < Board
+class Cell
 
+  
+    
 end

@@ -6,15 +6,8 @@ describe Board do
 	let(:board){ Board.new }
 	let(:small_ship){ double :ship, length: 1}
 
-
-  it "can have cells" do
-    expect(board.cells).to eq({:A1 => "", :A2 => "", :B1 => "", :B2 => ""})
+  it 'can return the length of the grid' do
+    expect(board.grid_length).to eq(4) 
   end
-
-	it 'it can place a ship' do
-    board.place_ship(small_ship, :A1)
-    expect(board.cells).to eq({:A1 => small_ship, :A2 => "", :B1 => "", :B2 => ""})
-  end
-
 
 end
