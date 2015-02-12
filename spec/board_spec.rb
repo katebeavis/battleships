@@ -10,4 +10,6 @@ describe Board do
     expect(board.grid_length).to eq(4) 
   end  
 
+  
+
 end
