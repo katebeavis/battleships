@@ -25,7 +25,7 @@ class Player
         if ship_name==name then board.place_ship(ship, ship_position) end
       end  
     end  
-  end  
-    
+  end
+       
 end  
 
