@@ -29,7 +29,7 @@ class Board
   end
 
   def take_shot(position, ship)
-    if grid[position].ship==:ship  
+    if grid[position].ship == :ship  
       grid[position].hit
       ship.hit
       player.alert_hit 
