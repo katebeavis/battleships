@@ -7,7 +7,7 @@ class Game
   end   
 
   def player_won?
-    player.sunk_ships==player_ships_count
+    player.sunk_ships == player_ships_count
   end  
 
 end  
