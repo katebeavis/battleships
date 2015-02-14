@@ -19,7 +19,7 @@ class Player
     player_place_ships(ships,positions)
   end  
 
-  def player_place_ships(ships,positions)
+  def player_place_ships(ships, positions)
     positions.each do |ship_name,ship_position|
       ships.each do |name, ship| 
         if ship_name==name then board.place_ship(ship, ship_position) end
@@ -27,5 +27,5 @@ class Player
     end  
   end  
     
-end  
+end
 
