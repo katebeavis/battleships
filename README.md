@@ -3,7 +3,7 @@
 
 Battleships was our week two project at Makers Academy. We were asked to recreate the popluar game of Battleships in the back-end.
 
-This project is still under construction.
+**This project is still under construction.**
 
 ### Objectives
 
