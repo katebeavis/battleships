@@ -1,3 +1,4 @@
+[![Code Climate](https://codeclimate.com/github/katebeavis/battleships/badges/gpa.svg)](https://codeclimate.com/github/katebeavis/battleships)
 # battle_ships
 
 Initial CRC diagram
