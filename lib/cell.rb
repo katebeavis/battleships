@@ -1,5 +1,2 @@
 class Cell
-
-  
-    
 end

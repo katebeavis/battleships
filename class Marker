@@ -1,4 +1,0 @@
-class Marker	
-	def initialize(options={})
-		@board = options.fetch()
-	end
