@@ -1,3 +1,4 @@
+require 'spec_helper'
 require 'missile'
 
 describe 'Missile' do
@@ -5,12 +6,12 @@ describe 'Missile' do
   let(:board) { double :board, cells: 4 }
   let(:ship) { double :ship, position: 'A1' }
 
-  it 'should be one cell' do
+  it 'has be one cell' do
     expect(missile.cell).to eq(1)
   end
 
-  it 'should be equal to the amount of cells on the board' do
-  	expect(missile.cell_count(board.cells)).to eq 4
+  it 'is be equal to the amount of cells on the board' do
+    expect(missile.cell_count(board.cells)).to eq 4
   end
 
   it 'needs to have a position' do
