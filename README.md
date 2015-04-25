@@ -1,72 +1,20 @@
 [![Code Climate](https://codeclimate.com/github/katebeavis/battleships/badges/gpa.svg)](https://codeclimate.com/github/katebeavis/battleships)
-# battle_ships
+# Battleships
 
-Initial CRC diagram
+Battleships was our week two project at Makers Academy. We were asked to recreate the popular game of Battleships in the back-end.
 
-Classes
--------
+**This project is still under construction.**
 
-class Player
+### Objectives
 
-Responsibilities:
-Player tells Game each Ship position,
-Player tells Game each Marker position,
+To further our understanding of Object-Orientated-Programming, Test-Driven-Development and Single Responsibility.
 
-Collaborators:
-Game
+### Technology
+- Ruby
+- Rspec
 
---------------------------------------------------
-
-class Game
-
-Responsibilities:
-Game tells Board Ships position, told by Player, 
-Game tells Board Marker position, told by Player, 
-Game tells Player if Marker has hit Ship,
-
-Collaborators:
-Board,
-Player,
-
--------------------------------------------------
-
-class Ship
-
-Responsibilities:
-Ship knows its been hit by Marker,
-Ship knows how many cells it has left,
-
-Collaborators:
-Board,
-Marker,
-
-----------------------------------------------------
-
-class Board
-
-Responsibilities:
-Board tells Ship its position,
-Board tells Ship if its been hit by Marker,
-Board tells Marker its position,
-Board tell Game if Marker has hit Ship,
-
-Collaborators:
-Ship,
-Marker,
-Game,
-
-------------------------------------------------------
-
-class Marker
-
-Responsibilities:
-Marker hits Ship,
-(or misses),
-
-Collaborators:
-Board,
-Ship,
-
+### Collaborators
+[Julian Veling](https://github.com/veliancreate)
 
 
 
