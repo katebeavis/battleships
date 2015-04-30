@@ -5,16 +5,13 @@ Battleships was our week two project at Makers Academy. We were asked to recreat
 
 **This project is still under construction.**
 
-### Objectives
+## Objectives
 
 To further our understanding of Object-Orientated-Programming, Test-Driven-Development and Single Responsibility.
 
-### Technology
+## Technology
 - Ruby
 - Rspec
-
-### Collaborators
-[Julian Veling](https://github.com/veliancreate)
 
 
 
